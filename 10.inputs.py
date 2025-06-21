@@ -16,3 +16,24 @@ def evaluacion(nota):
     print("Reprobado")
 
 evaluacion(nota_alumno)
+
+# Formatear
+str(input("Ingrese su nombre: "))
+int(input("Ingrese su edad: "))
+print(f"Hola {nombre} tienes {edad} años")
+
+
+validations = 1
+email = input("Ingrese su email: ")
+for i in range(len(email)): 
+  if email[i] == "@":
+    validation +=1
+    break
+  else email[i] == ".":
+    validation +=1
+    break
+
+if validation == 2:
+  print("Email valido")
+else:
+  print("Email invalido")
